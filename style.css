@@ -1,0 +1,155 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #334155;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .subtitle {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+    button {
+      background: #1e293b;
+      color: white;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      touch-action: manipulation;
+    }
+    button:active {
+      transform: scale(0.95);
+      background: #334155;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+    .section-title {
+      font-size: 13px;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .power-btn {
+      width: 100%;
+      padding: 18px;
+      background: #dc2626;
+      border: none;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .power-btn:active {
+      background: #b91c1c;
+    }
+    .row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .row button {
+      flex: 1;
+      padding: 16px;
+    }
+    .nav-pad {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .nav-pad button {
+      padding: 20px;
+      font-size: 20px;
+    }
+    .nav-pad .ok {
+      background: #059669;
+      border-color: #059669;
+    }
+    .nav-pad .ok:active {
+      background: #047857;
+    }
+    .nav-pad .empty {
+      background: transparent;
+      border: none;
+      pointer-events: none;
+    }
+    .numpad {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .numpad button {
+      padding: 18px;
+      font-size: 20px;
+    }
+    .color-btns {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .color-btns button {
+      padding: 14px;
+      font-size: 24px;
+      border: none;
+    }
+    .red { background: #dc2626; }
+    .green { background: #16a34a; }
+    .yellow { background: #ca8a04; }
+    .blue { background: #2563eb; }
+    .red:active { background: #b91c1c; }
+    .green:active { background: #15803d; }
+    .yellow:active { background: #a16207; }
+    .blue:active { background: #1d4ed8; }
+    .media-btns {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+    .media-btns button {
+      padding: 14px 8px;
+      font-size: 18px;
+    }
+    #status {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #059669;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+    #status.show {
+      opacity: 1;
+    }
